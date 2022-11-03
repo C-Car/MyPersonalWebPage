@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.2.2-dist/js/bootstrap.js"></script>
 </head>
 <body>
-    
+    <header>Contact Page</header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <form action="results.html" method="get">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ccarro27@uncc.edu">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <p>What's your favorite programming language?</p>
+          
+            <input type="radio" id="html" name="fav_language" value="html">
+            <label for="html" class="form-label">HTML</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="javascript">
+            <label for="javascript" class="form-label">JavaScript</label><br>
+            <input type="radio" id="cpp" name="fav_language" value="cpp">
+            <label for="cpp" class="form-label">C++</label><br>
+            <input type="radio" id="java" name="fav_language" value="java">
+            <label for="java" class="form-label">Java</label><br>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </body>
 </html>
